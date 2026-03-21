@@ -1,0 +1,40 @@
+# --- Security: NEVER include environment files ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+!.env.example
+
+# --- Python / Backend (FastAPI) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+
+# --- Node / Frontend (Next.js) ---
+node_modules/
+.next/
+out/
+build/
+dist/
+.vercel
+*.tsbuildinfo
+
+# --- OS / IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Docker & Databases ---
+.docker/
+qdrant_data/
+# Ignore local data persistence if any
+data/storage/
