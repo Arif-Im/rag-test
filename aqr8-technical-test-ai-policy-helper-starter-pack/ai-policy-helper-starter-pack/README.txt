@@ -15,6 +15,8 @@ This project is fully containerized. Follow these 3 steps to launch the complete
 
 1. Environment Setup
 Create a .env file in the root directory. You can copy the template from .env.example:
+For this test, I have explicitly not included the .env file as well as any references to the API key. 
+Including this file is extremely dangerous and will compromise sensitive data that would heavily impact the organization financially.
 
 Bash
 cp .env.example .env
@@ -24,6 +26,7 @@ Bash
 OPENROUTER_API_KEY=your_key_here
 LLM_PROVIDER=openrouter
 VECTOR_STORE=qdrant
+
 2. Launch with Docker
 Run the following command to build and start the Backend (FastAPI), Frontend (Next.js), and Vector Database (Qdrant):
 
